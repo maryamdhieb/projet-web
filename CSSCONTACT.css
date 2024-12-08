@@ -1,0 +1,144 @@
+/* Style général */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2980b9, #6dd5fa);
+    color: #fff;
+}
+
+/* Section Contact */
+.contact {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+/* Conteneur général pour le contenu */
+.container {
+    display: flex;
+    justify-content: center; /* Centre les éléments à l'intérieur du conteneur */
+    gap: 30px; /* Espacement entre le formulaire et les informations */
+    width: 100%;
+    max-width: 1200px; /* Limite la largeur pour éviter qu'il ne devienne trop large */
+    margin: 0 auto; /* Centre le conteneur sur la page */
+}
+
+/* Alignement et style du bloc contenant les informations de contact (à gauche) */
+.contact-info {
+    flex: 1; /* Prend toute la largeur disponible */
+    text-align: left;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px; /* Ajoute de l'espace à gauche */
+}
+
+/* Icones dans le contact-info */
+.contact-info i {
+    color: #88c0ff;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-info a:hover {
+    color: #88c0ff;
+    transform: scale(1.05);
+}
+
+/* Alignement et style du bloc contenant le formulaire (formulaire à droite) */
+.contact-form-container {
+    flex: 1; /* Prend toute la largeur disponible */
+    max-width: 500px; /* Limite la largeur du formulaire */
+    margin: 0;
+    background: #88c0ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+/* Formulaire de Contact */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments du formulaire */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%; /* Assure que les champs occupent toute la largeur */
+}
+
+/* Style des champs input et textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid white; /* Bordure blanche */
+    border-radius: 5px;
+    outline: none;
+    background-color: #88c0ff;
+    color: #ffffff;
+}
+
+/* Style pour le placeholder (input et textarea) */
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+/* Effet au focus sur les champs */
+input:focus, textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 254, 255, 0.5);
+    background-color: #ffffff;
+    color: #333435;
+}
+
+/* Spécifique pour textarea */
+textarea {
+    resize: none;
+    font-family: inherit;
+    height: 150px;
+}
+
+/* Bouton de soumission */
+.btn-submit {
+    background: #3498db;
+    color: #fefeff;
+    padding: 8px 15px;
+    font-size: 1rem;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.btn-submit:hover {
+    background: #3873f1;
+}
+
+/* Message de confirmation après l'envoi */
+.form-message {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c3e50;
+}

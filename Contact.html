@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mariem Dhieb</title>
+    <link rel="stylesheet" href="CSSCONTACT.css">
+    <link rel="stylesheet" href="accueil.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+        <a href="Accueil.html" class="navbar-logo">Mariem Dhieb</a>
+        <div class="navbar-toggle"></div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="Parcours.html">Parcours</a></li>
+            <li><a href="CompInfo.html">Compétences</a></li>
+            <li><a href="Projets.html">Projets</a></li>
+            <li><a href="Passion.html">Passion</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    
+  <!-- Section Contact -->
+<section class="contact">
+    <div class="container">
+        <!-- Informations de contact à gauche -->
+        <div class="contact-info">
+            <h2>Contactez-moi</h2>
+            <p>Pour toute question ou collaboration, envoyez-moi un message.</p> <br>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+21623015356">23015356</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:maryamdhieb3@gmail.com">maryamdhieb3@gmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps?q=Route+de+Tunis+klm+3.5" target="_blank">Route de Tunis klm 3.5</a></p>
+        </div>
+
+        <!-- Formulaire à droite -->
+        <div class="contact-form-container">
+            <form id="contactForm" class="contact-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nom et Prénom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Adresse Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Votre message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+        // Fonction de validation du formulaire
+        function validateForm() {
+            // Récupérer les valeurs des champs
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
+
+            // Vérification si les champs sont remplis
+            if (name == "" || email == "" || phone == "" || message == "") {
+                alert("Veuillez remplir tous les champs.");
+                return false; // Empêche l'envoi du formulaire
+            }
+
+            // Validation de l'email (expression régulière simple)
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!email.match(emailPattern)) {
+                alert("Veuillez entrer une adresse email valide.");
+                return false; // Empêche l'envoi du formulaire
+            }
+
+            // Validation du numéro de téléphone (numérique, 8 chiffres)
+            var phonePattern = /^[0-9]{8}$/;
+            if (!phone.match(phonePattern)) {
+                alert("Veuillez entrer un numéro de téléphone valide (8 chiffres).");
+                return false; // Empêche l'envoi du formulaire
+            }
+
+            // Si tout est correct, masquer le formulaire et afficher un message de confirmation
+            document.getElementById("contactForm").style.display = "none";
+            document.getElementById("formMessage").innerHTML = "Merci, votre message a été envoyé avec succès !";
+            document.getElementById("formMessage").style.color = "green";
+
+            return false; // Empêche l'envoi réel pour cette démonstration
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">Rejoignez-moi :</div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/mariem-dhieb-8b9498270" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">© 2024 Mariem Dhieb. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

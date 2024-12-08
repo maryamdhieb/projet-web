@@ -1,0 +1,109 @@
+/* Style global */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+  color: #333;
+}
+.titre h1{
+  color:beige;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 2.5rem; /* Taille réduite */
+}
+
+
+h1 {
+  text-align: center;
+  margin: 30px 0; /* Réduit la marge */
+  font-size: 1rem; /* Taille réduite */
+  color: #e3ecf7;
+}
+
+/* Style des questions */
+.question {
+  width: 80%; /* Réduit la largeur de chaque boîte (80% de la largeur parent) */
+  max-width: 900px; /* Limite la taille maximale */
+  margin: 10px auto; /* Centrer avec des marges réduites */
+  padding: 10px; /* Espacement interne réduit */
+  background-color: #88c0ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre discrète pour un effet visuel */
+}
+
+
+.question label {
+  font-size: 1.5rem; /* Taille de police réduite */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px; /* Réduit l'espace sous le label */
+  color: white;
+}
+
+input[type="radio"] {
+  margin-right: 8px; /* Espacement réduit */
+}
+
+/* Style des images */
+.image {
+  width: 100%;
+  max-width: 250px; /* Taille maximale réduite */
+  margin: 8px 0; /* Espacement réduit */
+  border: 2px solid #ddd; /* Bordure plus fine */
+  border-radius: 6px; /* Coins légèrement arrondis */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.03); /* Légère augmentation au survol */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Ombre légèrement réduite */
+}
+
+/* Bouton de soumission */
+#submitQuiz {
+  display: block;
+  margin: 20px auto; /* Réduit l'espacement vertical */
+  padding: 8px 16px; /* Taille réduite */
+  font-size: 1rem; /* Police légèrement réduite */
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#submitQuiz:hover {
+  background-color: #2878a9; /* Couleur légèrement plus sombre au survol */
+}
+
+/* Section des résultats */
+#result {
+  background-color: #eef;
+  padding: 15px; /* Espacement interne */
+  border-radius: 6px; /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre discrète */
+  text-align: center;
+  width: 80%; /* Même largeur que les questions */
+  max-width: 600px; /* Même largeur maximale que les questions */
+  margin: 20px auto; /* Centrer avec marge verticale */
+}
+
+
+/* Style des réponses correctes */
+.correct-answers {
+  margin-top: 15px; /* Réduit la marge */
+}
+
+.correct-answers ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.correct-answers li {
+  padding: 6px; /* Taille réduite */
+  background-color: #dff0d8;
+  border-radius: 4px; /* Coins moins arrondis */
+  margin-bottom: 4px; /* Réduit l'espacement */
+}

@@ -1,0 +1,164 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #2980b9, #6dd5fa);
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #2980b9, #6dd5fa);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #2980b9, #6dd5fa);
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #ffda79;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ffa502;
+}
+
+.about-box {  
+    background-color: #88c0ff; /* Couleur de fond légère pour contraster avec le texte */  
+    padding: 20px; /* Espace intérieur pour aérer le contenu */  
+    border-radius: 10px; /* Coins arrondis pour un aspect moderne */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet surélevé */  
+    margin: 10px auto; /* Espace extérieur pour séparer du reste des sections */  
+    max-width: 800px; /* Largeur maximale pour centrer et limiter la taille */  
+    text-align: center; /* Centrer le texte dans la section */  
+}  
+
+.about-box h2 {  
+    font-size: 2rem;  
+    color: beige;  
+    margin-bottom: 15px;  
+}  
+
+.about-box p {  
+    font-size: 1.2rem;  
+    color:beige;  
+    line-height: 1.8;  
+}  
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skill-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill-item {
+    text-align: center;
+    background: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #2980b9, #6dd5fa);
+    padding: 20px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 20px 0;
+} 
+
+.footer-logo {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+

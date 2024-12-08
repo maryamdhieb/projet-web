@@ -1,0 +1,110 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+}
+.passion h1{
+  font-family: 'Times New Roman', Times, serif;
+  color: beige;
+}
+.container p{
+  color: beige;
+}
+.passion h1{
+  color:beige;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/* Resize and Style Images */
+.image-small {
+  width: 50px; /* Taille réduite des images */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+/* Gallery of images */
+.image-gallery {
+  display: flex;
+  justify-content: center; /* Centre les images horizontalement */
+  align-items: center; /* Alignement vertical des images */
+  gap: 10px; /* Espacement entre les images */
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 250px; /* Taille fixe des images */
+  height: 250px; /* Hauteur fixe pour une uniformité */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  object-fit: cover; /* Maintient les proportions sans déformation */
+}
+
+
+
+/* Styles généraux pour les box */
+.passion-box {
+  display: flex;
+  flex-direction: row; /* Par défaut, image à gauche et texte à droite */
+  align-items: center;
+  justify-content: space-between;
+  background-color:#88c0ff; /* Couleur de fond légère */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 800px; /* Limite la largeur des box */
+}
+
+/* Réduction des tailles des images */
+.image-small {
+  width: 120px; /* Taille réduite de l'image */
+  height: auto; /* Maintient les proportions */
+  border-radius: 5px; /* Coins légèrement arrondis */
+}
+
+/* Style spécifique pour inverser l'ordre image/texte */
+.passion-box.reverse {
+  flex-direction: row-reverse; /* Inverse la position : image à droite */
+}
+
+/* Styles de texte */
+.passion-box p {
+  font-size: 1rem;
+  color: beige;
+  line-height: 1.5;
+  margin: 0 15px;
+  flex: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .passion-box {
+      flex-direction: column; /* Réorganise en colonne sur petits écrans */
+      text-align: center;
+  }
+
+  .passion-box.reverse {
+      flex-direction: column; /* Même structure pour la version inversée */
+  }
+
+  .image-small {
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column; /* Empile les images verticalement sur mobile */
+    align-items: center;
+  }
+
+  .image-gallery img {
+    width: 80%; /* Réduit la taille sur mobile */
+    margin-bottom: 15px;
+  }
+
+  .passion-box {
+    flex-direction: column; /* Empile l'image et le texte sur mobile */
+  }
+}
